@@ -35,9 +35,18 @@
             alt="Logo Perpustakaan"
             class="h-12 rounded-full"
           />
-          <a class="text-xl font-bold text-gray-800 ml-2" href="/home">
+          <a
+          class="nav-link"
+          routerLink="/home"
+          routerLinkActive="active"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          Perpustakaan<br />Digital ENOJ
+        </a>
+          <!-- <a class="text-xl font-bold text-gray-800 ml-2" href="/home">
             Perpustakaan<br />Digital ENOJ
-          </a>
+          </a> -->
         </div>
         <button
           id="menu-button"
@@ -62,37 +71,70 @@
           id="menu"
           class="hidden lg:flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-4"
         >
-          <a class="nav-link text-gray-800 hover:text-white-600" href="/about"
-          >About</a
-          >
-          <a class="nav-link text-gray-800 hover:text-white-600" href="/buku"
+        <a
+        class="nav-link"
+        routerLink="/about"
+        routerLinkActive="active"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        About
+      </a>
+          <a
+          class="nav-link"
+          routerLink="/buku"
+          routerLinkActive="active"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          > Buku </a>
+          <!-- <a class="nav-link text-gray-800 hover:text-white-600" href="/buku"
             >Buku</a
-            routerLinkActive="active"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-          <a class="nav-link text-gray-800 hover:text-white-600" href="/anggota"
-            >Anggota</a
-            routerLinkActive="active"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
+          > -->
           <a
-            class="nav-link text-gray-800 hover:text-white-600"
-            href="/peminjaman"
-            >Peminjaman</a
-          >
-          <a
-            class="nav-link text-gray-800 hover:text-white-600"
-            href="/pengembalian"
-            >Pengembalian</a
-          >
-          <a class="nav-link text-gray-800 hover:text-white-600" href="/denda"
-            >Denda</a
-          >
-          <a class="nav-link text-gray-800 hover:text-white-600" href="/contact"
-            >Contact</a
-          >
+          class="nav-link"
+          routerLink="/anggota"
+          routerLinkActive="active"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          Anggota
+        </a>
+        <a
+        class="nav-link"
+        routerLink="/peminjaman"
+        routerLinkActive="active"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        Peminjaman
+      </a>
+      <a
+      class="nav-link"
+      routerLink="/pengembalian"
+      routerLinkActive="active"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      Pengembalian
+    </a>
+    <a
+    class="nav-link"
+    routerLink="/denda"
+    routerLinkActive="active"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+  >
+    Denda
+  </a>
+  <a
+  class="nav-link"
+  routerLink="/contact"
+  routerLinkActive="active"
+  data-bs-toggle="collapse"
+  data-bs-target="#navbarNav"
+>
+  Contact
+</a>
           
           <button
             class="btn btn-danger"
