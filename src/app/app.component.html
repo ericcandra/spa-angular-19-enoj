@@ -135,6 +135,16 @@
 >
   Contact
 </a>
+<a
+          *ngIf="!isLoggedIn"
+          class="nav-link, btn btn-danger"
+          routerLink="/auth"
+          routerLinkActive="active"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          Login
+        </a>
           
           <button
             class="btn btn-danger"
