@@ -29,4 +29,5 @@ export const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'auth', component: AuthComponent },
   { path: 'about', component: AboutComponent },
+  { path: '**', redirectTo: 'auth' }, // Redirect jika route tidak ditemukan
 ];
